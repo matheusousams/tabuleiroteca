@@ -28,7 +28,6 @@ services:
       - "8089:8089"
     depends_on:
       - postgres
-      - redis
       - mysql
   # aplicação Postgres
   postgres:
@@ -59,14 +58,6 @@ services:
       - net_principal
     ports:
       - 30000:3306
-  # aplicação Redis
-  redis:
-    image: redis:7-alpine
-    restart: always
-    networks:
-      - net_principal
-    ports:
-      - 6379:6379
 
 networks:
   net_principal:
