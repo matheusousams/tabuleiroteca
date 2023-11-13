@@ -8,8 +8,4 @@ $port = "5432";
 
 $con_string = "host={$servername} port={$port} dbname={$database} user={$username} password={$password}";
 $conn = pg_connect($con_string) || die('Erro de conexão ao Postgres');
-echo "<br>";
-echo "Conexão com Postgres OK!";
-echo "<br>";
-echo "<br>";
 ?>

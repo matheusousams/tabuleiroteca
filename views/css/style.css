@@ -1,0 +1,62 @@
+/* Personalizando a altura da barra de rolagem */
+.scrollBar {
+    overflow: auto;
+    direction: rtl;
+    overflow-x: hidden;
+  }
+  .scrollBar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollBar::-webkit-scrollbar-track {
+    background: #f9ecdf; /* Cor de fundo da trilha */
+    border-radius: 20px;
+  }
+  .scrollBar::-webkit-scrollbar-thumb {
+    background: #A4B3CE; /* Cor da alça da barra de rolagem */
+    border-radius: 20px;
+  }
+
+body{
+    background-color: #F4F7FE !important;
+    height: 100vh;
+}
+.container-main{
+    width: 95%;
+    height: 88%;
+}
+.banner{
+    width: 85% !important;
+}
+.bg-primary{
+    background: #AEE8FD !important;
+}
+.bg-secondary{
+    background: #A4B3CE !important;
+}
+.navigation-pills{
+    width: 85%;
+}
+.tab-width{
+    width: 85%;
+}
+.container-main .rounded {
+    border-radius: 1.5rem !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #000;
+    background-color: #FDC3AE;
+}
+.nav-link {
+    color: #FFF;
+}
+.nav-link:hover, .nav-link:focus {
+    color: black;
+}
+.nav-pills {
+    --bs-nav-pills-border-radius: 1.5rem;
+}
+.btn-danger{
+    background-color: #FDC3AE !important;
+    border: #FDC3AE;
+}
