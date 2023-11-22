@@ -37,18 +37,18 @@ require_once('models/BD/connect.php');
             <div class="tab-content m-auto tab-width" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <h2>Bem-vindo(a) de volta!</h2>
-                    <form>
+                    <form >
                         <div class="mb-3 mt-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                         </div>
                         <div class="mb-3">
-                            <label for="inputPassword" class="form-label">Senha</label>
+                            <label for="senha" class="form-label">Senha</label>
                             <div>
-                                <input type="password" class="form-control" id="inputPassword" placeholder="********" required>
+                                <input type="password" class="form-control" id="senha" placeholder="********" required>
                             </div>
                         </div>
-                        <button class="mt-3 btn btn-danger w-100" type="submit">Entrar</button>
+                        <button class="mt-3 btn btn-danger w-100" name="enviar" type="submit">Entrar</button>
 
                     </form>
 
@@ -57,36 +57,36 @@ require_once('models/BD/connect.php');
                     <div class="ps-2" style="direction: ltr;">
 
                         <h2>Cadastre-se aqui!</h2>
-                        <form>
+                        <form action="models/register.php" method="post">
     
                             <div class="mb-1 mt-1">
-                                <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="digite aqui" required>
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="digite aqui" required>
                             </div>
                             <div class="mb-1 mt-1">
-                                <label for="exampleFormControlInput1" class="form-label">CPF</label>
-                                <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+                                <label for="cpf" class="form-label">CPF</label>
+                                <input type="text" class="form-control" name="cpf" id="cpf" placeholder="000.000.000-00" required>
                             </div>
                             <div class="mb-1 mt-1">
-                                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                <label for="email-cad" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email_cad" id="email_cad" placeholder="name@example.com" required>
                             </div>
                             <div class="mb-1 mt-1">
-                                <label for="exampleFormControlInput1" class="form-label">Telefone</label>
-                                <input type="text" class="form-control" id="telefone" placeholder="(00) 0000-0000" required>
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="(00) 0000-0000" required>
                             </div>
                             <div class="mb-1">
-                                <label for="inputPassword" class="form-label">Senha</label>
+                                <label for="senha" class="form-label">Senha</label>
                                 <div>
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="********" required>
+                                    <input type="password" class="form-control" name="senha" id="senha" placeholder="********" required>
                                 </div>
                             </div>
                             <div class="mb-1">
                                 <label for="inputPassword" class="form-label">Tipo de usuário</label>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" name="selecao" id="selecao">
                                     <option selected>Selecione uma opção</option>
-                                    <option value="1">Locador</option>
-                                    <option value="2">Locatário</option>
+                                    <option value="locador">Locador</option>
+                                    <option value="locatario">Locatário</option>
                                 </select>
                                 
                             </div>

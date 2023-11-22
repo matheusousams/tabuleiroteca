@@ -34,6 +34,12 @@ body{
 .bg-secondary{
     background: #A4B3CE !important;
 }
+.bg-blue{
+    background-color: #AEE8FD;;
+}
+.shadow-generic{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 .navigation-pills{
     width: 85%;
 }
@@ -60,3 +66,4 @@ body{
     background-color: #FDC3AE !important;
     border: #FDC3AE;
 }
+
