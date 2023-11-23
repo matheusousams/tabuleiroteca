@@ -7,8 +7,8 @@
     <title>Locatário</title>
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
     <script src="../css/bootstrap/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="../css/style.css?2.2">
-    <link rel="stylesheet" href="../css/lesse.css">
+    <link rel="stylesheet" href="../css/style.css?2.4">
+    <link rel="stylesheet" href="../css/lesse.css?1">
 </head>
 
 <body class="bg-secondary">
@@ -20,14 +20,31 @@
             </a>
         </div>
     </nav>
-    <div class="row  container-fluid container-lesse m-auto vh-100">
+    <div class="row  container-fluid container-user m-auto vh-100">
 
         <div class="col-2 px-0 d-flex align-items-center">
+
             <div class="bg-white border border-secondary rounded shadow-sm mt-5 w-100" style="height: 82%">
 
-                <p>oi</p>
+                <div class="d-flex justify-content-center ">
+
+                    <img src="../images/UserCircle.svg" class="" srcset="">
+                </div>
+                <h5 class="text-center">Nome do usuário</h5>
+                <div class="ps-2">
+                    <ul>
+                        <li><a href="#" class="link-secondary">Início</a></li>
+                        <li><a href="#" class="link-secondary">Meus aluguéis</a></li>
+                        <li><a href="#" class="link-secondary">Pesquisar jogos</a></li>
+                        <li><a href="#" class="link-secondary">Configuração</a></li>
+                        <li><a href="#" class="link-secondary">Sair</a></li>
+                    </ul>
+
+                </div>
+
             </div>
         </div>
+
         <div class="col-8 ps-2 d-flex align-items-center">
             <div class="  mt-5 w-100 px-3" style="height: 82%">
 
@@ -45,18 +62,31 @@
 
 
                 <div class="row h-75 bg-white border border-secondary rounded  shadow-sm">
-                    <figure>
-                        <blockquote class="blockquote">
-                            
-                            <h4 class="text-center pt-4">Aluguel de Jogos de tabuleiro</h4>
-                        </blockquote>
-                        <figcaption class="blockquote-footer">
-                            <p class="text-center">Uma platagorma feita especialmente para você!</p>
-                        </figcaption>
-                    </figure>
+                    <div>
+                        <h4 class="text-center pt-4">Aluguel de Jogos de tabuleiro</h4>
+                        <p class="text-center">Uma platagorma feita especialmente para você!</p>
+
+                        <div class="row w-75 m-auto" style="height: 60%;">
+                            <div class="col-5 border bg-primary  rounded-start p-3">
+                                <div class="h-50 p-3 d-flex justify-content-center">
+
+                                    <img src="../images/21.svg" alt="" srcset="">
+                                </div>
+                                <div class="h-50">
+                                    <h5 class="text-center">Bem-vindo(a)!</h5>
+                                    <p class="text-center">É Bom vê-lo(a) por aqui! Pesquise entre nosso acervo de jogos e se divirta!</p>
+                                </div>
+
+                            </div>
+                            <div class="col-7 bg-danger container-fluid  d-flex align-items-center p-4 rounded-end">
+                                <img src="../images/image 2.svg" alt="" class="container-fluid" srcset="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="col-2 px-0 d-flex align-items-center">
             <div class=" mt-5 w-100 px-2" style="height: 82%">
                 <div class="row pb-3" style="height:20%">
@@ -85,7 +115,9 @@
                             </div>
                         </div>
                         <p>1 nova notificação</p>
-                        <p>ola</p>
+                        <div class="p-2 border border-secondary rounded bg-primary">
+                            <p>Atraso na devolução</p>
+                        </div>
                     </div>
                 </div>
             </div>
