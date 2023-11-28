@@ -37,18 +37,18 @@ require_once('models/BD/connect.php');
             <div class="tab-content m-auto tab-width" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <h2>Bem-vindo(a) de volta!</h2>
-                    <form >
+                    <form method="post" action="models/auth/login.php">
                         <div class="mb-3 mt-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="senha" class="form-label">Senha</label>
                             <div>
-                                <input type="password" class="form-control" id="senha" placeholder="********" required>
+                                <input type="password" class="form-control" name="senha" id="senha" placeholder="********" required>
                             </div>
                         </div>
-                        <button class="mt-3 btn btn-danger w-100" name="enviar" type="submit">Entrar</button>
+                        <button class="mt-3 btn btn-danger w-100" type="submit">Entrar</button>
 
                     </form>
 
@@ -57,7 +57,7 @@ require_once('models/BD/connect.php');
                     <div class="ps-2" style="direction: ltr;">
 
                         <h2>Cadastre-se aqui!</h2>
-                        <form action="models/register.php" method="post">
+                        <form action="models/user.php" method="post">
     
                             <div class="mb-1 mt-1">
                                 <label for="nome" class="form-label">Nome</label>

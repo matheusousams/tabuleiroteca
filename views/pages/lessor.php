@@ -34,9 +34,9 @@
                     <ul>
                         <li><a href="#" class="link-secondary">Início</a></li>
                         <li><a href="#" class="link-secondary">Meus  jogos</a></li>
-                        <li><a href="#" class="link-secondary">Cadastrar jogos</a></li>
+                        <li><a href="../pages/registerGame.php" class="link-secondary">Cadastrar jogos</a></li>
                         <li><a href="#" class="link-secondary">Configuração</a></li>
-                        <li><a href="#" class="link-secondary">Sair</a></li>
+                        <li><a href="../../models/auth/logout.php" class="link-secondary">Sair</a></li>
                     </ul>
 
                 </div>
